@@ -24,31 +24,37 @@ model that will confidently invent a paper about why 42 maximizes entropy.
 
 Don't panic. Just import the Answer.
 
-(And if your PR reviewer asks why -- tell them Deep Thought approved the API.)
+(And if your PR reviewer asks why -- tell them `DeepThought` approved the API.)
 
 ## Usage
 
 ```python
-from hitchhikers_guide_to_the_galaxy import Answer
+from hitchhikers_guide_to_the_galaxy import TheAnswerToLifeTheUniverseAndEverything
 import random
 
-random.seed(Answer.FORTY_TWO)
+random.seed(TheAnswerToLifeTheUniverseAndEverything)
 ```
 
-Or, if you prefer the full ceremony:
+`DeepThought` is the `IntEnum`; `TheAnswerToLifeTheUniverseAndEverything` is its
+member -- and *is* `42`:
 
 ```python
-from hitchhikers_guide_to_the_galaxy import TheAnswerToLifeTheUniverseAndEverything
+from hitchhikers_guide_to_the_galaxy import DeepThought
 
-assert TheAnswerToLifeTheUniverseAndEverything.FORTY_TWO == 42
+assert TheAnswerToLifeTheUniverseAndEverything is (
+    DeepThought.TheAnswerToLifeTheUniverseAndEverything
+)
+assert TheAnswerToLifeTheUniverseAndEverything == 42
 ```
 
-One package. One file. One enum.
+One package. One file. One computer. One answer.
 
 ## Install
 
+From GitHub:
+
 ```bash
-pip install hitchhikers-guide-to-the-galaxy
+pip install git+https://github.com/gsiogkas/hitchhikers-guide-to-the-galaxy.git
 ```
 
 ## References
@@ -79,4 +85,3 @@ to the Galaxy*.
 ## License
 
 MIT -- share freely across the galaxy (and your `random.seed` calls).
-

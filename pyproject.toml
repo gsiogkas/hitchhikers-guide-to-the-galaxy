@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hitchhikers-guide-to-the-galaxy"
 version = "0.1.0"
-description = "The Answer to Life, the Universe, and Everything -- as an IntEnum. A tribute to Douglas Adams."
+description = "DeepThought.TheAnswerToLifeTheUniverseAndEverything -- seed with 42. A tribute to Douglas Adams."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
@@ -17,6 +17,7 @@ keywords = [
     "douglas-adams",
     "42",
     "hitchhikers-guide",
+    "deep-thought",
     "seed",
     "vibe-coding",
     "tribute",
@@ -31,7 +32,8 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Homepage = "https://pypi.org/project/hitchhikers-guide-to-the-galaxy/"
+Homepage = "https://github.com/gsiogkas/hitchhikers-guide-to-the-galaxy"
+Repository = "https://github.com/gsiogkas/hitchhikers-guide-to-the-galaxy"
 "Don't Panic" = "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy"
 
 [tool.setuptools.packages.find]

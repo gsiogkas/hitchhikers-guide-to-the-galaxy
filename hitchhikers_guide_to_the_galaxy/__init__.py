@@ -3,17 +3,17 @@
 from enum import IntEnum
 
 __all__ = [
+    "DeepThought",
     "TheAnswerToLifeTheUniverseAndEverything",
-    "Answer",
 ]
 
 __version__ = "0.1.0"
 
 
-class TheAnswerToLifeTheUniverseAndEverything(IntEnum):
-    """The Answer. Yes, that one. Seed responsibly."""
+class DeepThought(IntEnum):
+    """7.5 million years of compute. You're welcome."""
 
-    FORTY_TWO = 42
+    TheAnswerToLifeTheUniverseAndEverything = 42
 
 
-Answer = TheAnswerToLifeTheUniverseAndEverything
+TheAnswerToLifeTheUniverseAndEverything = DeepThought.TheAnswerToLifeTheUniverseAndEverything
